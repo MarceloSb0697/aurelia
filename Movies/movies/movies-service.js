@@ -9,14 +9,15 @@ export class MoviesService {
         this.movies = [
 
         ];
+        this.currentId = 0;
         this.http = httpClient;
     }
 
     activate() {
-        console.log("moviesService-activate");
         this.http.get("/movies/movies.json")
             .then(response => {
                 this.movies = JSON.parse(response.response);
+                this.currentId = this.movies.length;
             });
     }
 
@@ -45,6 +46,12 @@ export class MoviesService {
             }
         }
         return movie;
+    }
+
+    createMovie(movie) {
+        this.currentId++;
+        movie.id = this.currentId;
+        this.movies.push(movie);
     }
     
 }
