@@ -12,21 +12,23 @@ export class MoviesEdit {
     }
 
     activate(params) {
-        return this.movieService.getMovieById(params.id)
-            .then(response => {
-                this.movie = response;
-            });
+        let movie = this.movieService.getMovieById(params.id);
+        this.movie = JSON.parse(JSON.stringify(movie));
     }
 
 
     updateMovie() {
-        //this.movieService.updateMovie(this.movie)
-        //    .then((response) => {
-        //        let url = this.router
-        //            .generate("details",
-        //            { id: this.movie.id });
-        //        this.router.navigate(url);
-        //    })
-        alert("Updated");
+        this.movieService.updateMovie(this.movie);
+        let url = this.router
+                      .generate("details",
+                      { id: this.movie.id });
+        this.router.navigate(url);
+            //.then((response) => {
+            //    alert("Updated");
+            //    let url = this.router
+            //        .generate("details",
+            //        { id: this.movie.id });
+            //    this.router.navigate(url);
+            //});
     }
 }

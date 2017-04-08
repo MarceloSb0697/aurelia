@@ -1,5 +1,5 @@
 ﻿import { MoviesService } from 'movies/movies-service';
-import { inject } from "aurelia-framework"; 
+import { inject } from "aurelia-framework";
 
 
 @inject(MoviesService)
@@ -8,9 +8,6 @@ export class MoviesDetails {
         this.movieService = movieService;
     }
     activate(params) {
-       return this.movieService.getMovieById(params.id)
-            .then(response => {
-                this.movie = response;
-            });
+        this.movie = this.movieService.getMovieById(params.id);
     }
 }

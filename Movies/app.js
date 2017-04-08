@@ -5,7 +5,6 @@ import { inject } from "aurelia-framework";
 @inject(MoviesService)
 export class App {
     constructor(moviesService) {
-        console.log("Constructor");
         this.moviesService = moviesService;
         this.moviesService.activate();
     }

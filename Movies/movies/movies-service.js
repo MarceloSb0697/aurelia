@@ -13,6 +13,7 @@ export class MoviesService {
     }
 
     activate() {
+        console.log("moviesService-activate");
         this.http.get("/movies/movies.json")
             .then(response => {
                 this.movies = JSON.parse(response.response);
@@ -28,11 +29,22 @@ export class MoviesService {
     }
 
     getMovieById(id) {
-        return this.http.get("/movies/movies.json")
-            .then(response => {
-                let list = JSON.parse(response.response);
-                return list.find(x => x.id == id);
-            }); 
+        return this.movies.find(x => x.id == id);
+        //return this.http.get("/movies/movies.json")
+        //    .then(response => {
+        //        let list = JSON.parse(response.response);
+        //        return list.find(x => x.id == id);
+        //    }); 
+    }
+
+    updateMovie(movie) {
+        for (let i = 0; i < this.movies.length; i++) {
+            if (this.movies[i].id == movie.id) {
+                this.movies[i] = movie;
+                break;
+            }
+        }
+        return movie;
     }
     
 }
