@@ -1,0 +1,20 @@
+﻿<template>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li repeat.for="row of router.navigation"
+                    class="${row.active? 'active':''}">
+                    <a href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <router-view>
+
+        </router-view>
+        <!--<compose view-model="movies/movies-list">
+
+        </compose>-->
+    </div>
+</template>

@@ -1,0 +1,42 @@
+﻿<template>
+    <div class="container">
+        Current movies count : ${movies.length}
+    </div>
+    <div class="container">
+        <a route-href="route:create"
+           class="btn  btn-primary">
+            Create
+        </a>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Release Year</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="movie of movies">
+                    <td>${movie.title}</td>
+                    <td>${movie.releaseYear}</td>
+                    <td>
+                        <a route-href="route:details;params.bind:{id:movie.id}"
+                           class="btn  btn-info">
+                            Details
+                        </a>
+                        <a route-href="route:edit;params.bind:{id:movie.id}"
+                           class="btn  btn-warning">
+                            Edit
+                        </a>
+                        <button class="btn  btn-danger">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</template>
