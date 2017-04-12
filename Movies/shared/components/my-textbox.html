@@ -1,0 +1,12 @@
+﻿<template>
+   
+
+    <div class="form-group">
+        <label class="control-label" for="${objId}">${label}</label>
+        <input type="text" 
+               class="form-control" 
+               id.bind="objId"
+               placeholder.bind="placeholder"
+               value.bind="value & validate">
+    </div>
+</template>

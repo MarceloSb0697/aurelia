@@ -1768,6 +1768,9 @@
     <Content Include="movies\movies-list.js" />
     <Content Include="movies\movies-service.js" />
     <Content Include="shared\base-validation.js" />
+    <Content Include="shared\components\index.js" />
+    <Content Include="shared\components\my-textbox.html" />
+    <Content Include="shared\components\my-textbox.js" />
     <Content Include="shared\form-validation-renderer.js" />
     <Content Include="Web.config" />
   </ItemGroup>

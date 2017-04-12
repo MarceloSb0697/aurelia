@@ -22,16 +22,20 @@ export class MoviesEdit extends BaseValidation {
     activate(params) {
         let movie = this.movieService.getMovieById(params.id);
         this.movie = JSON.parse(JSON.stringify(movie));
-        ValidationRules
-            .ensure(a => a.title)
-            .required().withMessage('CLAIM NAME is required.')
-            .on(this.movie);
+        //ValidationRules
+        //    .ensure(a => a.title)
+        //    .required()
+        //    .on(this.movie);
     }
 
 
     updateMovie() {
-        console.log("udppdate");
-        let validation = this.controller.validate();
+        console.log("udppdate", this.movie);
+        let self = this;
+        let validation = this.controller.validate()
+            .then(() => {
+                this.controller.reset();
+            });
         console.log("validation", validation);
        // this.validation.validate().then(() => {
             //this.movieService.updateMovie(this.movie);
