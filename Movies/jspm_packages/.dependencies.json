@@ -215,5 +215,9 @@
   },
   "npm:validate.js@0.10.0": {
     "process": "github:jspm/nodelibs-process@^0.1.0"
-  }
+  },
+  "npm:font-awesome@4.7.0": {
+    "css": "jspm:css@0.1"
+  },
+  "github:systemjs/plugin-css@0.1.33": {}
 }
