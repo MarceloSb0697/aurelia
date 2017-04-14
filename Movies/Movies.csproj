@@ -262,6 +262,31 @@
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_screen-reader.scss" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_stacked.scss" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_variables.scss" />
+    <Content Include="styles\components\_index.css">
+      <DependentUpon>_index.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\components\_index.min.css">
+      <DependentUpon>_index.css</DependentUpon>
+    </Content>
+    <Content Include="styles\components\_index.scss" />
+    <Content Include="styles\components\_my-textbox.css">
+      <DependentUpon>_my-textbox.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\components\_my-textbox.min.css">
+      <DependentUpon>_my-textbox.css</DependentUpon>
+    </Content>
+    <Content Include="styles\components\_my-textbox.scss" />
+    <Content Include="styles\_index.css">
+      <DependentUpon>_index.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\_index.min.css">
+      <DependentUpon>_index.css</DependentUpon>
+    </Content>
+    <Content Include="styles\_index.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

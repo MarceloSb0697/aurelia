@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "styles/components/_my-textbox.css",
+    "inputFile": "styles/components/_my-textbox.scss"
+  },
+  {
+    "outputFile": "styles/_index.css",
+    "inputFile": "styles/_index.scss"
+  },
+  {
+    "outputFile": "styles/components/_index.css",
+    "inputFile": "styles/components/_index.scss"
+  }
+]
