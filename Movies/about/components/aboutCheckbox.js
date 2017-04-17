@@ -11,8 +11,8 @@
             'value.bind="defaultValue"' +
             '&gt;<br/>' +
             '&lt;/my-checkbox&gt;';
-        this.codeJs = 'constructor() { <br/> ' +
-            'this.defaultValue = true;<br/>}';
+        this.codeJs = 'constructor() { <br/>' +
+            ' this.defaultValue = true;<br/>}';
                 
     }
 }
