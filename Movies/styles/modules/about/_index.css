@@ -8,11 +8,10 @@
   height: 100%; }
 
 #sidebar-wrapper {
-  margin-left: -200px;
+  margin-left: -150px;
   left: 70px;
   width: 200px;
   background: #222;
-  position: fixed;
   height: 100%;
   z-index: 10000;
   transition: all .4s ease 0s; }
@@ -70,7 +69,6 @@
   text-decoration: none; }
 
 .sidebar-nav li a:hover {
-  color: #fff;
   background: rgba(255, 255, 255, 0.2);
   text-decoration: none; }
 
@@ -79,7 +77,6 @@
   text-decoration: none; }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
   line-height: 60px;
   font-size: 18px; }
 

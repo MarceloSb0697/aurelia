@@ -6,8 +6,8 @@
                 <li class="sidebar-brand"><a id="menu-toggle" href="#">Home<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
             </ul>
             <ul class="sidebar-nav" id="sidebar">
-                <li><a>Checkbox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                <li><a>Datebox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <!--<li><a>Checkbox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href.bind="route=datebox">Datebox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a>Dropdown<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a>Label<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a>Maskedbox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
@@ -16,13 +16,31 @@
                 <li><a>Numericbox<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a>Radiobutton<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a>Textarea<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                <li><a>Timepicker<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                    -->
+
+                <!--<li>
+                    <a>Timepicker
+                        <span class="sub_icon glyphicon glyphicon-link"></span>
+                    </a>
+                </li>-->
+
+                <li repeat.for="row of router.navigation"
+                    class="${row.active? 'active':''}">
+                    <a href.bind="row.href">${row.title}
+                        <span class="sub_icon glyphicon glyphicon-link"></span>
+                    </a>
+                </li>
             </ul>
+
+
         </div>
         <div class="componentRouteContainer">
-            <router-view>
+            <div>
+                <router-view>
 
-            </router-view> 
+                </router-view> 
+            </div>
+            
         </div>
     </div>
 

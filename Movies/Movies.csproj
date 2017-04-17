@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="about\components\aboutCheckbox.html" />
     <Content Include="about\components\aboutCheckbox.js" />
+    <Content Include="about\components\aboutDatebox.html" />
+    <Content Include="about\components\aboutDatebox.js" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.min.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\fonts\fontawesome-webfont.svg" />
