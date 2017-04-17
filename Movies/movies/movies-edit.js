@@ -2,20 +2,22 @@
 import { inject } from "aurelia-framework";
 import { Router } from "aurelia-router";
 
-import { BaseValidation } from '../shared/base-validation';
-import { ValidationRules } from 'aurelia-validation';
-import { ValidationControllerFactory } from 'aurelia-validation';
+//import { BaseValidation } from '../shared/base-validation';
+//import { ValidationRules } from 'aurelia-validation';
+//import { ValidationControllerFactory } from 'aurelia-validation';
 
-@inject(MoviesService, Router, ValidationControllerFactory)
-export class MoviesEdit extends BaseValidation {
+@inject(MoviesService, Router)
+//@inject(MoviesService, Router, ValidationControllerFactory)
+export class MoviesEdit  {
+//export class MoviesEdit extends BaseValidation {
 
-    constructor(movieService, router, controllerFactory) {
-        super(controllerFactory.createForCurrentScope());
+    constructor(movieService, router) {
+        //super(controllerFactory.createForCurrentScope());
         this.title = "Edit Movie";
         this.movie;
         this.movieService = movieService;
         this.router = router;
-        this.controller = controllerFactory.createForCurrentScope();
+        //this.controller = controllerFactory.createForCurrentScope();
         
     }
 
@@ -32,26 +34,18 @@ export class MoviesEdit extends BaseValidation {
     updateMovie() {
         console.log("udppdate", this.movie);
         let self = this;
-        let validation = this.controller.validate()
-            .then(() => {
-                this.controller.reset();
-            });
-        console.log("validation", validation);
-       // this.validation.validate().then(() => {
-            //this.movieService.updateMovie(this.movie);
-            //let url = this.router
-            //    .generate("details",
-            //    { id: this.movie.id });
-            //this.router.navigate(url);
-       // });
+         this.movieService.updateMovie(this.movie);
+            let url = this.router
+                .generate("details",
+                { id: this.movie.id });
+            this.router.navigate(url);
+       
+         
+    }
 
-        //.then((response) => {
-        //    alert("Updated");
-        //    let url = this.router
-        //        .generate("details",
-        //        { id: this.movie.id });
-        //    this.router.navigate(url);
-        //});
+    cancelEdit() {
+        let url = this.router.generate("home", {});
+        this.router.navigate(url);
     }
 }
 //ValidationRules

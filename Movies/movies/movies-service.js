@@ -6,9 +6,7 @@ import { inject } from "aurelia-framework";
 export class MoviesService {
 
     constructor(httpClient) {
-        this.movies = [
-
-        ];
+        this.movies = [];
         this.currentId = 0;
         this.http = httpClient;
     }
@@ -52,6 +50,10 @@ export class MoviesService {
         this.currentId++;
         movie.id = this.currentId;
         this.movies.push(movie);
+    }
+
+    deleteMovie(movie) {
+        this.movies = this.movies.filter(x => x.id != movie.id);
     }
     
 }

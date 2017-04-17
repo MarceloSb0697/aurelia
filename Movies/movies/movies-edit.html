@@ -22,18 +22,21 @@
                                     value.bind="movie.releaseYear">
                         </my-textbox>
                     </div>
+                    <div>
+                        <button class="btn btn-primary"
+                                click.trigger="updateMovie()">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            Save
+                        </button>
+                        <button class="btn btn-danger"
+                                click.trigger="cancelEdit()">
+                            <i class="fa fa-close" aria-hidden="true"></i>
+                            Cancel
+                        </button>
+                    </div>
                 </form>
             </div>
-            <div>
-                <button class="btn btn-primary"
-                        click.trigger="updateMovie()">
-                    Save
-                </button>
-                <a route-href="route:home"
-                   class="btn btn-default">
-                    <span>Back</span>
-                </a>
-            </div>
+
         </div>
     </div>
 </template>

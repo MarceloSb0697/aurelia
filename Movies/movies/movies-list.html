@@ -23,16 +23,20 @@
                     <td>${movie.releaseYear}</td>
                     <td>
                         <a route-href="route:details;params.bind:{id:movie.id}"
-                           class="btn  btn-info">
-                            Details
+                           class="btn btn-info">
+                            <span class="fa fa-search"></span>
+                            <span>Details</span>
                         </a>
                         <a route-href="route:edit;params.bind:{id:movie.id}"
                            class="btn  btn-warning">
-                            Edit
+                            <span class="fa fa-pencil"></span>
+                            <span>Edit</span>
                         </a>
-                        <button class="btn  btn-danger">
-                            Remove
-                        </button>
+                        <a route-href="route:delete;params.bind:{id:movie.id}"
+                           class="btn  btn-danger">
+                            <span class="fa fa-trash"></span>
+                            <span>Remove</span>
+                        </a>
                     </td>
                 </tr>
             </tbody>

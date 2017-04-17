@@ -71,6 +71,8 @@
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.min.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\HELP-US-OUT.txt" />
+    <Content Include="movies\movies-delete.html" />
+    <Content Include="movies\movies-delete.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="jspm_packages\.dependencies.json" />
@@ -276,6 +278,7 @@
       <DependentUpon>_my-textbox.css</DependentUpon>
     </Content>
     <Content Include="styles\components\_my-textbox.scss" />
+    <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
     </Content>
@@ -287,6 +290,8 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="styles\modules\_index.scss" />
+    <Content Include="styles\modules\movies\_index.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
