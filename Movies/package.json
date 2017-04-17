@@ -9,6 +9,7 @@
       "aurelia-validatejs": "npm:aurelia-validatejs@^0.7.0",
       "aurelia-validation": "npm:aurelia-validation@^1.0.0",
       "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "bootstrap-datepicker": "npm:bootstrap-datepicker@^1.6.4",
       "font-awesome": "npm:font-awesome@^4.7.0"
     },
     "devDependencies": {

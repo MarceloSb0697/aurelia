@@ -2,5 +2,6 @@
     aurelia.globalResources(
         "../my-textbox",
         "../my-checkbox",
+        "../my-datebox",
     );
 }

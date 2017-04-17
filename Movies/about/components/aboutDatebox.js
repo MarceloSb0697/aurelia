@@ -1,9 +1,14 @@
-﻿export class AboutDatebox {
+﻿
+
+export class AboutDatebox {
     constructor() {
         this.title = "About Datebox"; 
+        this.defaultValue = "10/05/2017";
     }
 
     activate() {
+        this.codeHtml = 'codeHtml';
+        this.codeJs = 'codeJs';
         //this.codeHtml = '&lt;my-checkbox ' +
         //    'obj-id="demo" ' +
         //    'name="Demo-Label" ' +

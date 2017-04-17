@@ -14,5 +14,9 @@
   {
     "outputFile": "styles/modules/about/_index.css",
     "inputFile": "styles/modules/about/_index.scss"
+  },
+  {
+    "outputFile": "jspm_packages/npm/bootstrap-datepicker@1.6.4/less/datepicker.css",
+    "inputFile": "jspm_packages/npm/bootstrap-datepicker@1.6.4/less/datepicker.less"
   }
 ]

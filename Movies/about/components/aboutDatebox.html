@@ -6,6 +6,56 @@
                     ${title}
                 </h3>
             </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LLAVE</td>
+                            <td>VALOR</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <my-datebox obj-id="demo"
+                                        name="Demo-Label"
+                                        value.bind="defaultValue">
+                            </my-datebox>
+                        </div>
+                        <div>
+                            Valor del dateBox : ${defaultValue}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
