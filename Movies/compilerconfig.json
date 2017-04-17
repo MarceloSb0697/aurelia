@@ -10,5 +10,9 @@
   {
     "outputFile": "styles/components/_index.css",
     "inputFile": "styles/components/_index.scss"
+  },
+  {
+    "outputFile": "styles/modules/about/_index.css",
+    "inputFile": "styles/modules/about/_index.scss"
   }
 ]

@@ -15,11 +15,11 @@ export class App {
         config.map(
             [
                 { route: ["", "list"], moduleId: "movies/movies-list", title: "Movies List", nav: true, name : "home" },
-                { route: "about", moduleId: "about/about", title: "About", nav: true },
                 { route: "details/:id", moduleId: "movies/movies-details", title: "Details Movie", name: "details" },
                 { route: "edit/:id", moduleId: "movies/movies-edit", title: "Edit Movie", name: "edit" },
                 { route: "create", moduleId: "movies/movies-create", title: "Create Movie", name: "create" },
-                { route: "delete/:id", moduleId: "movies/movies-delete", title: "Delete Movie", name: "delete" }
+                { route: "delete/:id", moduleId: "movies/movies-delete", title: "Delete Movie", name: "delete" },
+                { route: "about", moduleId: "about/about", title: "About", nav: true , name : "about" }
             ]
         );
     }

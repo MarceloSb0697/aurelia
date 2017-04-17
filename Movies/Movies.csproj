@@ -67,6 +67,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about\components\aboutCheckbox.html" />
+    <Content Include="about\components\aboutCheckbox.js" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.min.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\fonts\fontawesome-webfont.svg" />
@@ -278,6 +280,13 @@
       <DependentUpon>_my-textbox.css</DependentUpon>
     </Content>
     <Content Include="styles\components\_my-textbox.scss" />
+    <Content Include="styles\modules\about\_index.css">
+      <DependentUpon>_index.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\modules\about\_index.min.css">
+      <DependentUpon>_index.css</DependentUpon>
+    </Content>
+    <Content Include="styles\modules\about\_index.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

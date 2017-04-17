@@ -1,5 +1,4 @@
-﻿@import url(components/_index.css);
-.row {
+﻿.row {
   margin-left: 0px;
   margin-right: 0px; }
 
@@ -129,8 +128,4 @@
 
 .componentContainer {
   margin-left: 50px; }
-
-.navbar {
-  border-radius: 0px;
-  margin-bottom: 0px; }
 
