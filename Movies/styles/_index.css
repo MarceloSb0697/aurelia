@@ -9,11 +9,10 @@
   height: 100%; }
 
 #sidebar-wrapper {
-  margin-left: -200px;
+  margin-left: -150px;
   left: 70px;
   width: 200px;
-  background: #222;
-  position: fixed;
+  background: #222; 
   height: 100%;
   z-index: 10000;
   transition: all .4s ease 0s; }
@@ -80,7 +79,6 @@
   text-decoration: none; }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
   line-height: 60px;
   font-size: 18px; }
 
@@ -124,10 +122,12 @@
     width: 200px;
     transition: all .4s ease 0s; } }
 
-.componentTitle {
-  margin: 0px; }
-
 .componentContainer {
+  padding: 10px; }
+  .componentContainer .componentTitle {
+    margin: 0px; }
+
+.componentRouteContainer {
   margin-left: 50px; }
 
 .navbar {

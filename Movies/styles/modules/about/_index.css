@@ -123,9 +123,11 @@
     width: 200px;
     transition: all .4s ease 0s; } }
 
-.componentTitle {
-  margin: 0px; }
-
 .componentContainer {
+  padding: 10px; }
+  .componentContainer .componentTitle {
+    margin: 0px; }
+
+.componentRouteContainer {
   margin-left: 50px; }
 

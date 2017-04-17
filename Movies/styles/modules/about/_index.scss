@@ -152,10 +152,14 @@
     }
 }
 
-.componentTitle{
-    margin : 0px;
+.componentContainer {
+    padding : 10px;
+    .componentTitle {
+        margin: 0px;
+    }
 }
 
-.componentContainer{
-    margin-left : 50px;
+.componentRouteContainer {
+    margin-left: 50px;
 }
+ 
