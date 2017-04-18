@@ -6,3 +6,7 @@
   [id^="dateboxInput"].invalid {
     border: 2px solid #8b2929; }
 
+[id^="dropDownSelect"] {
+  width: auto;
+  display: initial; }
+

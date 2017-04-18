@@ -22,5 +22,9 @@
   {
     "outputFile": "styles/components/_my-datebox.css",
     "inputFile": "styles/components/_my-datebox.scss"
+  },
+  {
+    "outputFile": "styles/components/_my-dropdown.css",
+    "inputFile": "styles/components/_my-dropdown.scss"
   }
 ]
