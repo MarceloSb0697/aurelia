@@ -2,11 +2,12 @@
     <label id="dropDownLabel${objId}" for="dropDownSelect${objId}">
         ${name}
     </label>
-    <select value.bind="value" 
+    <select value.bind="selected" 
             class="form-control"
             id="dropDownSelect${objId}" 
             change.trigger="onChange(value)">
-        <option repeat.for="option of options"  model.bind="option" >
+        <option repeat.for="option of options" 
+                model.bind="option" >
             ${option.text}
         </option>
     </select>

@@ -24,6 +24,6 @@
             { id: "6", text: "Desc 6" }
         ];
 
-        this.dropdownValue = this.dropdownOptions[1];
+        this.selected = this.dropdownOptions[1];
     }
 }

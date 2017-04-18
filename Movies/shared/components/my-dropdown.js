@@ -2,7 +2,7 @@
 
  
 @bindable({ name: 'options', defaultBindingMode: bindingMode.twoWay, defaultValue: [] })
-@bindable({ name: 'value', defaultBindingMode: bindingMode.twoWay })
+@bindable({ name: 'selected', defaultBindingMode: bindingMode.twoWay })
 @bindable({ name: 'name', defaultValue: '' })
 @bindable({ name: 'objId', defaultValue: null })
 

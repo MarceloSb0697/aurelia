@@ -7,6 +7,35 @@
                 </h3>
             </div>
             <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>objId</td>
+                            <td>El id del objeto que le generara al input</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>El nombre que le asignara al label del input</td>
+                        </tr>
+                        <tr>
+                            <td>selected</td>
+                            <td>
+                                El objeto que le asignara al option<br/>
+                                Es un objeto, para obtener el valor usar "obj.id"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>optons</td>
+                            <td>La lista de objetos a iterar</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div>
                     <h4>HTML</h4>
                     <pre rel="HTML">
@@ -33,12 +62,12 @@
                         <div>  
                             <my-dropdown obj-id="demo"
                                          name="Demo-Label"
-                                         value.bind="dropdownValue"
+                                         selected.bind="selected"
                                          options.bind="dropdownOptions">
                             </my-dropdown>
                         </div>
                         <div>
-                            Valor del Checkbox : ${dropdownValue.id}
+                            Valor del Checkbox : ${selected.id}
                         </div>
                     </div>
                 </div>
