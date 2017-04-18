@@ -10,10 +10,9 @@ export class CustomFunctions{
     }
 
     isValidDate(date, format = "MM/DD/YYYY") {
+        console.log("formato-isValidDate", format);
         return moment(date, format.toUpperCase(), true).isValid();
     }
 
-    convertToDate(date, format = "MM/DD/YYYY") {
-        return moment(date).format(format);
-    }
+     
 }

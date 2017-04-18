@@ -7,7 +7,7 @@ import { CustomFunctions } from "../custom-functions"
 @bindable('name')
 @bindable({ name: 'value', defaultBindingMode: bindingMode.twoWay, defaultValue: undefined })
 @bindable({ name: 'format', defaultBindingMode: bindingMode.twoWay, defaultValue: 'MM/DD/YYYY' })
-
+@bindable({ name: 'isRequired', defaultBindingMode: bindingMode.twoWay, defaultValue: false })
 @inject(Element, CustomFunctions)
 export class MyDatebox {
 
@@ -16,33 +16,48 @@ export class MyDatebox {
         this.customFnc = customFnc;
     }
 
-    attached() {  
+    attached() {
         let input = $('#dateboxInput' + this.objId);
         let self = this;
-        this.isValidDate = this.customFnc.isValidDate(this.value,this.format);
-
+        this.isValidDate = this.customFnc.isValidDate(this.value, this.format);
+        console.log("format", this.format);
         input.datepicker({
-            format : self.format
+            autoclose: true,
+            format: self.format
         })
             .on('changeDate', function (ev) {
                 let value = input.val();
                 self.isValidDate = self.customFnc.isValidDate(value, self.format);
-                console.log("self.isValidDate", self.isValidDate);
-                if (self.isValidDate) {
-                    self.value = self.customFnc.convertToDate(value,self.format.toUpperCase());
-                    input.datepicker('hide');
+                console.log("isValidDate", self.isValidDate);
+                if (self.isValidDate) { 
+                    self.value = value;
                 }
-                //self.isValidDate = value.isValid();
-                //if (self.isValidDate) {
-                //    
-                //    input.datepicker('hide');
-                //} 
-        }); 
+            })
+            .on('hide', function (ev) {
+                if (!self.isValidDate) {
+                    //add validation handler
+                    input.val('');
+                }
+            })
+            ;
     }
 
     valueChanged(newValue) {
-        if (!newValue)
-            this.isValidDate = false;
+        if (!newValue) {
+            if (this.isRequired)
+                this.isValidDate = false;
+            else
+                this.isValidDate = true;
+        }
+        else {
+            console.log("valueChanged");
+            let input = $('#dateboxInput' + this.objId);
+            this.isValidDate = this.customFnc.isValidDate(newValue, this.format);
+            if (!this.isValidDate) {
+                input.val('');
+                //add validation handler 
+            }
+        }
     }
 
     openCalendar() {

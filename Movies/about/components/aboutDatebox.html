@@ -44,16 +44,45 @@
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <div>
-                            <my-datebox obj-id="demo"
-                                        name="Demo-Label"
-                                        value.bind="defaultValue"
-                                        format="mm/dd/yyyy">
-                            </my-datebox>
-                        </div>
-                        <div>
-                            Valor del dateBox : ${defaultValue}
-                        </div>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div>
+                                            <my-datebox obj-id="demo"
+                                                        name="Demo-Label"
+                                                        value.bind="defaultValue"
+                                                        format="mm/dd/yyyy">
+                                            </my-datebox>
+                                        </div>
+                                        <div>
+                                            Valor del dateBox : ${defaultValue}
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div>
+                                            <my-datebox obj-id="demoRequired"
+                                                        name="Demo-Required-Label"
+                                                        value.bind="requiredValue"
+                                                        format="dd/mm/yyyy"
+                                                        is-required="true">
+                                            </my-datebox>
+                                        </div>
+                                        <div>
+                                            Valor del dateBox : ${requiredValue}
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
                     </div>
                 </div>
             </div>

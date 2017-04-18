@@ -4,6 +4,7 @@ export class AboutDatebox {
     constructor() {
         this.title = "About Datebox"; 
         this.defaultValue = "05/10/2017";
+        this.requiredValue = "25/10/2017";
     }
 
     activate() {
