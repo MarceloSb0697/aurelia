@@ -1,33 +1,20 @@
 ﻿import { MoviesService } from 'movies/movies-service';
 import { inject } from "aurelia-framework";
 import { Router } from "aurelia-router";
+ 
+@inject(MoviesService, Router) 
+export class MoviesEdit  { 
 
-//import { BaseValidation } from '../shared/base-validation';
-//import { ValidationRules } from 'aurelia-validation';
-//import { ValidationControllerFactory } from 'aurelia-validation';
-
-@inject(MoviesService, Router)
-//@inject(MoviesService, Router, ValidationControllerFactory)
-export class MoviesEdit  {
-//export class MoviesEdit extends BaseValidation {
-
-    constructor(movieService, router) {
-        //super(controllerFactory.createForCurrentScope());
+    constructor(movieService, router) { 
         this.title = "Edit Movie";
         this.movie;
         this.movieService = movieService;
-        this.router = router;
-        //this.controller = controllerFactory.createForCurrentScope();
-        
+        this.router = router; 
     }
 
     activate(params) {
         let movie = this.movieService.getMovieById(params.id);
-        this.movie = JSON.parse(JSON.stringify(movie));
-        //ValidationRules
-        //    .ensure(a => a.title)
-        //    .required()
-        //    .on(this.movie);
+        this.movie = JSON.parse(JSON.stringify(movie)); 
     }
 
 
@@ -47,8 +34,4 @@ export class MoviesEdit  {
         let url = this.router.generate("home", {});
         this.router.navigate(url);
     }
-}
-//ValidationRules
-//    .ensure(a => a.title).required()
-//    .ensure(a => a.releaseYear).required()
-//    .on(MoviesEdit.movie);
+} 

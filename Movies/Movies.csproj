@@ -73,6 +73,8 @@
     <Content Include="about\components\aboutDatebox.js" />
     <Content Include="about\components\aboutDropdown.html" />
     <Content Include="about\components\aboutDropdown.js" />
+    <Content Include="about\components\aboutTextbox.html" />
+    <Content Include="about\components\aboutTextbox.js" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.min.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.standalone.css" />
@@ -2218,11 +2220,9 @@
     <Content Include="movies\movies-list.html" />
     <Content Include="movies\movies-list.js" />
     <Content Include="movies\movies-service.js" />
-    <Content Include="shared\base-validation.js" />
     <Content Include="shared\components\index.js" />
     <Content Include="shared\components\my-textbox.html" />
     <Content Include="shared\components\my-textbox.js" />
-    <Content Include="shared\form-validation-renderer.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
