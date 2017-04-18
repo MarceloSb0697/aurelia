@@ -8,16 +8,18 @@ export class AboutDatebox {
     }
 
     activate() {
-        this.codeHtml = 'codeHtml';
         this.codeJs = 'codeJs';
-        //this.codeHtml = '&lt;my-checkbox ' +
-        //    'obj-id="demo" ' +
-        //    'name="Demo-Label" ' +
-        //    'value.bind="defaultValue"' +
-        //    '&gt;<br/>' +
-        //    '&lt;/my-checkbox&gt;';
-        //this.codeJs = 'constructor() { <br/>' +
-        //    ' this.defaultValue = true;<br/>}';
+        this.codeHtml = '&lt;my-datebox ' +
+            'obj-id="demo" ' +
+            'name="Demo-Label" ' +
+            'value.bind="defaultValue" ' +
+            'format="mm/dd/yyyy" ' +
+            'is-required="true"' +
+            '&gt;<br/>' +
+            '&lt;/my-datebox&gt;';
+
+        this.codeJs = 'constructor() { <br/>' +
+            ' this.defaultValue = "05/10/2017";<br/>}';
                 
     }
 }
