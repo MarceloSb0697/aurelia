@@ -8,8 +8,9 @@ export class About {
     configureRouter(config, router) {
         this.router = router;
         let routes = [
-            { route: "", moduleId: "about/components/aboutCheckbox", nav: true, name: "checkbox" , title : "Checkbox"},
-            { route: "datebox", moduleId: "about/components/aboutDatebox", nav: true, name: "datebox", title: "Datebox"}
+            { route: "", moduleId: "about/components/aboutCheckbox", nav: true, name: "checkbox", title: "Checkbox" },
+            { route: "datebox", moduleId: "about/components/aboutDatebox", nav: true, name: "datebox", title: "Datebox" },
+            { route: "dropdown", moduleId: "about/components/aboutDropdown", nav: true, name: "dropdown", title: "Dropdown" }
         ];
         config.map(routes);
     }

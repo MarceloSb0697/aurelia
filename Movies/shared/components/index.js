@@ -3,5 +3,6 @@
         "../my-textbox",
         "../my-checkbox",
         "../my-datebox",
+        "../my-dropdown",
     );
 }

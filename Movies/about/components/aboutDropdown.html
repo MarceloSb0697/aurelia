@@ -1,0 +1,47 @@
+﻿<template>
+    <div class="componentContainer">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="componentTitle">
+                    ${title}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div>  
+                            <my-dropdown obj-id="demo"
+                                         name="Demo-Label"
+                                         value.bind="dropdownValue"
+                                         options.bind="dropdownOptions">
+                            </my-dropdown>
+                            Valor del Checkbox : ${dropdownValue.id}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>
