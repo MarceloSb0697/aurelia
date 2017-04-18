@@ -3,7 +3,7 @@
 export class AboutDatebox {
     constructor() {
         this.title = "About Datebox"; 
-        this.defaultValue = "10/05/2017";
+        this.defaultValue = "05/10/2017";
     }
 
     activate() {

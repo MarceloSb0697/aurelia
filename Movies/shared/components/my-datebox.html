@@ -3,9 +3,11 @@
         <label id="dateboxLabel${objId}">${name}</label>
         <input type="text"
                id="dateboxInput${objId}"
-               placeholder.bind="placeholder"
+               placeholder.bind="format"
                value.bind="value" />
-        <i class="fa fa-calendar"></i>
+        <i class="fa fa-calendar" click.trigger="openCalendar()"></i>
     </div>
-    
+    <div>
+        Is valid date ${isValidDate}
+    </div>
 </template>

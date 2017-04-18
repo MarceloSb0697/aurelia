@@ -556,6 +556,7 @@
     <Content Include="shared\components\my-checkbox.js" />
     <Content Include="shared\components\my-datebox.html" />
     <Content Include="shared\components\my-datebox.js" />
+    <Content Include="shared\custom-functions.js" />
     <Content Include="styles\components\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
     </Content>
