@@ -26,5 +26,9 @@
   {
     "outputFile": "styles/components/_my-dropdown.css",
     "inputFile": "styles/components/_my-dropdown.scss"
+  },
+  {
+    "outputFile": "shared/components/index.es5.js",
+    "inputFile": "shared/components/index.js"
   }
 ]

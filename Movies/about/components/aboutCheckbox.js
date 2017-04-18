@@ -2,6 +2,12 @@
     constructor() {
         this.title = "About Checkbox";
         this.defaultValue = true;
+        this.primaryValue = false;
+        this.sucessValue = true;
+        this.infoValue = false;
+        this.warningValue = true;
+        this.errorValue = false;
+
     }
 
     activate() {

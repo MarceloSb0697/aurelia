@@ -655,6 +655,7 @@
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\README.md" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\tests\README.md" />
     <Content Include="styles\components\_my-dropdown.scss" />
+    <Content Include="styles\components\_my-checkbox.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

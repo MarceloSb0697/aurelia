@@ -27,6 +27,10 @@
                             <td>value</td>
                             <td>El valor que le asignara al input</td>
                         </tr>
+                        <tr>
+                            <td>class (Opcional) - defaultValue : ''</td>
+                            <td>Una clase en especifico que se quiera para el checbox</td>
+                        </tr>
                     </tbody>
                 </table>
                 <div>
@@ -52,13 +56,71 @@
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <div>
-                            <my-checkbox obj-id="demo"
-                                         name="Demo-Label"
-                                         value.bind="defaultValue">
-                            </my-checkbox>
-                            Valor del Checkbox : ${defaultValue}
-                        </div>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    <my-checkbox obj-id="demo"
+                                                 name="Default"
+                                                 value.bind="defaultValue">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${defaultValue}
+                                    </div>
+                                </td> 
+                                <td>
+                                    <my-checkbox obj-id="demoPrimary"
+                                                 name="Primary"
+                                                 value.bind="primaryValue"
+                                                 class="checkbox-primary">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${primaryValue}
+                                    </div>
+                                </td> 
+                                <td>
+                                    <my-checkbox obj-id="demoSucess"
+                                                 name="Sucess"
+                                                 value.bind="sucessValue"
+                                                 class="checkbox-success">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${sucessValue}
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <my-checkbox obj-id="demoInfo"
+                                                 name="Info"
+                                                 value.bind="infoValue"
+                                                 class="checkbox-info">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${infoValue}
+                                    </div>
+                                </td> 
+                                <td>
+                                    <my-checkbox obj-id="demoWarning"
+                                                 name="Warning"
+                                                 value.bind="warningValue"
+                                                 class="checkbox-warning">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${warningValue}
+                                    </div>
+                                </td> 
+                                <td>
+                                    <my-checkbox obj-id="demoDanger"
+                                                 name="Danger"
+                                                 value.bind="errorValue"
+                                                 class="checkbox-danger">
+                                    </my-checkbox>
+                                    <div>
+                                        Valor del Checkbox : ${errorValue}
+                                    </div>
+                                </td> 
+                            </tr>
+                        </table> 
                     </div>
                 </div>
             </div>
