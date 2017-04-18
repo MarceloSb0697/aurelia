@@ -1,6 +1,9 @@
 ﻿.textboxContainer {
   margin: 0px 0px 15px 0px !important; }
 
+[id^="textboxInput"] {
+  width: auto; }
+
 [id^="dateboxInput"] {
   border-radius: 4px; }
   [id^="dateboxInput"].invalid {
