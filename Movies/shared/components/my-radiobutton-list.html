@@ -1,25 +1,11 @@
 ﻿<template>
     <label id="${id}-Label">${label}</label>
-    <div>
-
-        <input type="radio" name="myRadio" value="1" /> 1
-        <br />
-        <input type="radio" name="myRadio" value="2" /> 2
-        <br />
-        <input type="radio" name="myRadio" value="3" /> 3
-        <br />
+    <div repeat.for="radio of list">
+        <div>
+            <input type="radio" 
+                   name="myRadio" 
+                   model.bind="radio"
+                   checked.bind="selected" /> ${radio.text}
+        </div>
     </div>
-    <!--<div id="rb-container-${radiobutton.id}"
-         repeat.for="radiobutton of radiobuttons">
-        <div class="radio radio-success">
-            <input type="radio"
-                   id="${id}-${radiobutton.id}"
-                   model.bind="radiobutton"
-                   checked.bind="selected"
-                   name.bind="radioname" tabindex="-1">
-        </div>
-        <div id="radio-buton-text-${id}" >
-            <span class="radio-button-name">${radiobutton.name}</span>
-        </div>
-    </div>-->
 </template> 
