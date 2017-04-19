@@ -4,5 +4,6 @@
         "../my-checkbox",
         "../my-datebox",
         "../my-dropdown",
+        "../my-radiobutton",
     );
 }

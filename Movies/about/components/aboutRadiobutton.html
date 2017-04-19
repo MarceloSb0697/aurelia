@@ -1,0 +1,129 @@
+﻿<template>
+    <div class="componentContainer">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="componentTitle">
+                    ${title}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>objId</td>
+                            <td>El id del objeto que le generara al input</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>El nombre que le asignara al label del input</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>El valor que le asignara al input</td>
+                        </tr>
+                        <tr>
+                            <td>class (Opcional) - defaultValue : ''</td>
+                            <td>Una clase en especifico que se quiera para el checbox</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    <my-radiobutton obj-id="demo"
+                                                    name="Default"
+                                                    value.bind="defaultValue">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del Radiobutton : ${defaultValue}
+                                    </div>
+                                </td>
+                                <td>
+                                    <my-radiobutton obj-id="demoPrimary"
+                                                 name="Primary"
+                                                 value.bind="primaryValue"
+                                                 class="radio-primary">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del Radiobutton : ${primaryValue}
+                                    </div>
+                                </td>
+                                <td>
+                                    <my-radiobutton obj-id="demoSucess"
+                                                 name="Sucess"
+                                                 value.bind="sucessValue"
+                                                 class="radio-success">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del Radiobutton : ${sucessValue}
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <my-radiobutton obj-id="demoInfo"
+                                                 name="Info"
+                                                 value.bind="infoValue"
+                                                 class="radio-info">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del radio : ${infoValue}
+                                    </div>
+                                </td>
+                                <td>
+                                    <my-radiobutton obj-id="demoWarning"
+                                                 name="Warning"
+                                                 value.bind="warningValue"
+                                                 class="radio-warning">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del radio : ${warningValue}
+                                    </div>
+                                </td>
+                                <td>
+                                    <my-radiobutton obj-id="demoDanger"
+                                                 name="Danger"
+                                                 value.bind="errorValue"
+                                                 class="radio-danger">
+                                    </my-radiobutton>
+                                    <div>
+                                        Valor del radio : ${errorValue}
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

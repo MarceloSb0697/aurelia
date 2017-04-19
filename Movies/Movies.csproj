@@ -75,6 +75,8 @@
     <Content Include="about\components\aboutDropdown.js" />
     <Content Include="about\components\aboutTextbox.html" />
     <Content Include="about\components\aboutTextbox.js" />
+    <Content Include="about\components\aboutRadiobutton.html" />
+    <Content Include="about\components\aboutRadiobutton.js" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.min.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.standalone.css" />
@@ -562,6 +564,8 @@
     <Content Include="shared\components\my-datebox.js" />
     <Content Include="shared\components\my-dropdown.html" />
     <Content Include="shared\components\my-dropdown.js" />
+    <Content Include="shared\components\my-radiobutton.html" />
+    <Content Include="shared\components\my-radiobutton.js" />
     <Content Include="shared\custom-functions.js" />
     <Content Include="styles\components\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
@@ -658,6 +662,7 @@
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\tests\README.md" />
     <Content Include="styles\components\_my-dropdown.scss" />
     <Content Include="styles\components\_my-checkbox.scss" />
+    <Content Include="styles\components\_my-radiobutton.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
