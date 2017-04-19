@@ -5,5 +5,6 @@
         "../my-datebox",
         "../my-dropdown",
         "../my-radiobutton",
+        "../my-radiobutton-list",
     );
 }

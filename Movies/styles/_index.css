@@ -95,8 +95,7 @@
 
 .sub_icon {
   float: right;
-  padding-right: 65px;
-  padding-top: 10px; }
+  padding: 10px 20px; }
 
 .content-header {
   height: 65px;

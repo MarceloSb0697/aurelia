@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="about\components\aboutCheckbox.html" />
     <Content Include="about\components\aboutCheckbox.js" />
+    <Content Include="about\components\aboutRadiobuttonList.js" />
+    <Content Include="about\components\aboutRadiobuttonList.html" />
     <Content Include="about\components\aboutDatebox.html" />
     <Content Include="about\components\aboutDatebox.js" />
     <Content Include="about\components\aboutDropdown.html" />
@@ -77,6 +79,8 @@
     <Content Include="about\components\aboutTextbox.js" />
     <Content Include="about\components\aboutRadiobutton.html" />
     <Content Include="about\components\aboutRadiobutton.js" />
+    <Content Include="about\components\aboutIndex.html" />
+    <Content Include="about\components\aboutIndex.js" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.min.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.standalone.css" />
@@ -566,6 +570,8 @@
     <Content Include="shared\components\my-dropdown.js" />
     <Content Include="shared\components\my-radiobutton.html" />
     <Content Include="shared\components\my-radiobutton.js" />
+    <Content Include="shared\components\my-radiobutton-list.html" />
+    <Content Include="shared\components\my-radiobutton-list.js" />
     <Content Include="shared\custom-functions.js" />
     <Content Include="styles\components\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
