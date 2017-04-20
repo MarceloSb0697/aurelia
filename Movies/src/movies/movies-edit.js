@@ -1,4 +1,4 @@
-﻿import { MoviesService } from 'movies/movies-service';
+﻿import { MoviesService } from '../../src/movies/movies-service';
 import { inject } from "aurelia-framework";
 import { Router } from "aurelia-router";
  

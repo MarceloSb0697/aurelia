@@ -67,20 +67,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about\components\aboutCheckbox.html" />
-    <Content Include="about\components\aboutCheckbox.js" />
-    <Content Include="about\components\aboutRadiobuttonList.js" />
-    <Content Include="about\components\aboutRadiobuttonList.html" />
-    <Content Include="about\components\aboutDatebox.html" />
-    <Content Include="about\components\aboutDatebox.js" />
-    <Content Include="about\components\aboutDropdown.html" />
-    <Content Include="about\components\aboutDropdown.js" />
-    <Content Include="about\components\aboutTextbox.html" />
-    <Content Include="about\components\aboutTextbox.js" />
-    <Content Include="about\components\aboutRadiobutton.html" />
-    <Content Include="about\components\aboutRadiobutton.js" />
-    <Content Include="about\components\aboutIndex.html" />
-    <Content Include="about\components\aboutIndex.js" />
+    <Content Include="build\helpers.js" />
+    <Content Include="src\about\components\aboutCheckbox.html" />
+    <Content Include="src\about\components\aboutCheckbox.js" />
+    <Content Include="src\about\components\aboutRadiobuttonList.js" />
+    <Content Include="src\about\components\aboutRadiobuttonList.html" />
+    <Content Include="src\about\components\aboutDatebox.html" />
+    <Content Include="src\about\components\aboutDatebox.js" />
+    <Content Include="src\about\components\aboutDropdown.html" />
+    <Content Include="src\about\components\aboutDropdown.js" />
+    <Content Include="src\about\components\aboutTextbox.html" />
+    <Content Include="src\about\components\aboutTextbox.js" />
+    <Content Include="src\about\components\aboutRadiobutton.html" />
+    <Content Include="src\about\components\aboutRadiobutton.js" />
+    <Content Include="src\about\components\aboutIndex.html" />
+    <Content Include="src\about\components\aboutIndex.js" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.min.css" />
     <Content Include="jspm_packages\npm\bootstrap-datepicker%401.6.4\dist\css\bootstrap-datepicker.standalone.css" />
@@ -369,8 +370,8 @@
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.min.css" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\HELP-US-OUT.txt" />
-    <Content Include="movies\movies-delete.html" />
-    <Content Include="movies\movies-delete.js" />
+    <Content Include="src\movies\movies-delete.html" />
+    <Content Include="src\movies\movies-delete.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="jspm_packages\.dependencies.json" />
@@ -523,7 +524,7 @@
     <Content Include="jspm_packages\system-csp-production.js.map" />
     <Content Include="jspm_packages\system-polyfills.js.map" />
     <Content Include="jspm_packages\system.js.map" />
-    <Content Include="movies\movies.json" />
+    <Content Include="src\movies\movies.json" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\.jspm-hash" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\.npmignore" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\css\font-awesome.css.map" />
@@ -562,17 +563,17 @@
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_screen-reader.scss" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_stacked.scss" />
     <Content Include="jspm_packages\npm\font-awesome%404.7.0\scss\_variables.scss" />
-    <Content Include="shared\components\my-checkbox.html" />
-    <Content Include="shared\components\my-checkbox.js" />
-    <Content Include="shared\components\my-datebox.html" />
-    <Content Include="shared\components\my-datebox.js" />
-    <Content Include="shared\components\my-dropdown.html" />
-    <Content Include="shared\components\my-dropdown.js" />
-    <Content Include="shared\components\my-radiobutton.html" />
-    <Content Include="shared\components\my-radiobutton.js" />
-    <Content Include="shared\components\my-radiobutton-list.html" />
-    <Content Include="shared\components\my-radiobutton-list.js" />
-    <Content Include="shared\custom-functions.js" />
+    <Content Include="src\shared\components\my-checkbox.html" />
+    <Content Include="src\shared\components\my-checkbox.js" />
+    <Content Include="src\shared\components\my-datebox.html" />
+    <Content Include="src\shared\components\my-datebox.js" />
+    <Content Include="src\shared\components\my-dropdown.html" />
+    <Content Include="src\shared\components\my-dropdown.js" />
+    <Content Include="src\shared\components\my-radiobutton.html" />
+    <Content Include="src\shared\components\my-radiobutton.js" />
+    <Content Include="src\shared\components\my-radiobutton-list.html" />
+    <Content Include="src\shared\components\my-radiobutton-list.js" />
+    <Content Include="src\shared\custom-functions.js" />
     <Content Include="styles\components\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
     </Content>
@@ -669,6 +670,8 @@
     <Content Include="styles\components\_my-dropdown.scss" />
     <Content Include="styles\components\_my-checkbox.scss" />
     <Content Include="styles\components\_my-radiobutton.scss" />
+    <Content Include=".babelrc" />
+    <Content Include="webpack.config.js" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
@@ -692,10 +695,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about\about.html" />
-    <Content Include="about\about.js" />
-    <Content Include="app.html" />
-    <Content Include="app.js" />
+    <Content Include="src\about\about.html" />
+    <Content Include="src\about\about.js" />
+    <Content Include="src\app.html" />
+    <Content Include="src\app.js" />
     <Content Include="config.js" />
     <Content Include="index.html" />
     <Content Include="jspm_packages\github\jspm\nodelibs-assert%400.1.0.js" />
@@ -2221,19 +2224,19 @@
     <Content Include="jspm_packages\system-polyfills.src.js" />
     <Content Include="jspm_packages\system.js" />
     <Content Include="jspm_packages\system.src.js" />
-    <Content Include="main.js" />
-    <Content Include="movies\movies-create.html" />
-    <Content Include="movies\movies-create.js" />
-    <Content Include="movies\movies-details.html" />
-    <Content Include="movies\movies-details.js" />
-    <Content Include="movies\movies-edit.html" />
-    <Content Include="movies\movies-edit.js" />
-    <Content Include="movies\movies-list.html" />
-    <Content Include="movies\movies-list.js" />
-    <Content Include="movies\movies-service.js" />
-    <Content Include="shared\components\index.js" />
-    <Content Include="shared\components\my-textbox.html" />
-    <Content Include="shared\components\my-textbox.js" />
+    <Content Include="src\main.js" />
+    <Content Include="src\movies\movies-create.html" />
+    <Content Include="src\movies\movies-create.js" />
+    <Content Include="src\movies\movies-details.html" />
+    <Content Include="src\movies\movies-details.js" />
+    <Content Include="src\movies\movies-edit.html" />
+    <Content Include="src\movies\movies-edit.js" />
+    <Content Include="src\movies\movies-list.html" />
+    <Content Include="src\movies\movies-list.js" />
+    <Content Include="src\movies\movies-service.js" />
+    <Content Include="src\shared\components\index.js" />
+    <Content Include="src\shared\components\my-textbox.html" />
+    <Content Include="src\shared\components\my-textbox.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2242,6 +2245,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -12,7 +12,7 @@ export class MoviesService {
     }
 
     activate() {
-        this.http.get("/movies/movies.json")
+        this.http.get("/src/movies/movies.json")
             .then(response => {
                 this.movies = JSON.parse(response.response);
                 this.currentId = this.movies.length;
