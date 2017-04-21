@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="about\components\aboutCheckbox.html" />
     <Content Include="about\components\aboutCheckbox.js" />
+    <Content Include="about\components\aboutPicklist.html" />
+    <Content Include="about\components\aboutPicklist.js" />
     <Content Include="about\components\aboutRadiobuttonList.js" />
     <Content Include="about\components\aboutRadiobuttonList.html" />
     <Content Include="about\components\aboutDatebox.html" />
@@ -568,6 +570,8 @@
     <Content Include="shared\components\my-datebox.js" />
     <Content Include="shared\components\my-dropdown.html" />
     <Content Include="shared\components\my-dropdown.js" />
+    <Content Include="shared\components\my-picklist.html" />
+    <Content Include="shared\components\my-picklist.js" />
     <Content Include="shared\components\my-radiobutton.html" />
     <Content Include="shared\components\my-radiobutton.js" />
     <Content Include="shared\components\my-radiobutton-list.html" />
@@ -652,6 +656,7 @@
     <Content Include="styles\components\_my-checkbox.scss" />
     <Content Include="styles\components\_my-radiobutton.scss" />
     <Content Include="styles\components\_my-radiobuttonlist.scss" />
+    <Content Include="styles\components\_my-picklist.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

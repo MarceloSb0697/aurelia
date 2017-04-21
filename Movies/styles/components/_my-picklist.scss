@@ -1,0 +1,10 @@
+﻿[id^="pickListLabel"] {
+    display: block;
+}
+
+[id^="picklistContainer"] {
+    &.horizontal {
+        display: inline-block;
+        padding: 5px 20px;
+    }
+}

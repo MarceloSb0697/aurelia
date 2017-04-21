@@ -53,6 +53,12 @@
     font-family: 'FontAwesome';
     content: "\f00c";
 }
+.checkbox input[type="checkbox"]:indeterminate + label::after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    margin-left: -19px;
+    margin-top: 1px;
+}
 
 .checkbox input[type="checkbox"]:disabled + label {
     opacity: 0.65;

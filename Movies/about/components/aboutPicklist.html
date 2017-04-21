@@ -1,0 +1,58 @@
+﻿<template>
+    <div class="componentContainer">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="componentTitle">
+                    ${title}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>objId</td>
+                            <td>
+                                El id del objeto que le generara al input
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <my-picklist obj-id="picklistDemo"
+                                     name="PickList demo"
+                                     list.bind="list"> 
+                        </my-picklist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

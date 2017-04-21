@@ -1,0 +1,25 @@
+﻿<template>
+    <label id="pickListLabel${objId}">${name}</label>
+    <div  class="checkbox ${class} ${alignment}"
+          id="picklistContainer${objId}-${option.id}"
+          if.bind="selectAll">
+        <input type="checkbox"
+               checked.bind="allChecked" 
+               id="pickListInputAll"
+               name="pickListInputAll" 
+               change.delegate="checkAll()"
+               indeterminate.bind="allIndeterminate"/>
+        <label for="pickListInputAll">All</label>
+    </div>
+    <div repeat.for="option of list"
+         class="checkbox ${class} ${alignment}"
+         id="picklistContainer${objId}-${option.id}">
+        <input type="checkbox"  
+               checked.bind="option.checked"
+               model.bind="option"
+               id="pickListInput${objId}-${option.id}" 
+               name="pickListInput${objId}-${option.id}" 
+               change.delegate="singleCheck()"/>
+        <label for="pickListInput${objId}-${option.id}" > ${option.text}</label>
+    </div>
+</template>

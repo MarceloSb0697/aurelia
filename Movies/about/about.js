@@ -14,7 +14,8 @@ export class About {
             { route: "dropdown", moduleId: "about/components/aboutDropdown", nav: true, name: "dropdown", title: "Dropdown" },
             { route: "textbox", moduleId: "about/components/aboutTextbox", nav: true, name: "textbox", title: "Textbox" },
             { route: "radiobutton", moduleId: "about/components/aboutRadiobutton", nav: true, name: "radiobutton", title: "Radiobutton" },
-            { route: "radiobuttonlist", moduleId: "about/components/aboutRadiobuttonList", nav: true, name: "radiobuttonlist", title: "RadiobuttonList" }
+            { route: "radiobuttonlist", moduleId: "about/components/aboutRadiobuttonList", nav: true, name: "radiobuttonlist", title: "RadiobuttonList" },
+            { route: "picklist", moduleId: "about/components/aboutPicklist", nav: true, name: "picklist", title: "Picklist" }
         ];
         config.map(routes);
     }
