@@ -1,9 +1,28 @@
 ﻿export class AboutPicklist {
     constructor() {
-        this.title = "About Picklist";
-        this.codeJs = "JS";
-        this.codeHtml = "codeHtml";
+        this.title = "About Picklist"; 
+
+        this.codeHtml = '&lt;my-picklist ' +
+            'obj-id="picklistDemo" ' +
+            'name="PickList demo" ' +
+            'list.bind="pickList" ' +
+            'class="checkbox-primary" ' +
+            'alignment="horizontal" ' +
+            'select-all="true" ' +
+            '&gt;<br/>' +
+            '&lt;/my-picklist&gt;';
+
+        this.codeJs = 'constructor() { <br/>' +
+            ' this.pickList = [' + '<br/>' +
+            ' \t{ id: 1, text: "Desc Primary 1", checked: false },' + '<br/>' +
+            ' \t{ id: 2, text: "Desc Primary 2", checked: true  },' + '<br/>' +
+            ' \t{ id: 3, text: "Desc Primary 3", checked: true  },' + '<br/>' +
+            ' \t...' + '<br/>' +
+            ' \t{ id: "n", text: "Desc n" } , checked: true ' + '<br/>' +
+            ' ] ;' + '<br/>' +
+            ' }';
     }
+
     activate() {
         this.list = [
             { id: 1, text: "Desc 1", checked: true },
@@ -19,7 +38,6 @@
             { id: 4, text: "Desc Primary 4", checked: true }
         ];
 
-
         this.listInfo = [
             { id: 1, text: "Desc Info 1", checked: true },
             { id: 2, text: "Desc Info 2", checked: true },
@@ -34,8 +52,7 @@
             { id: 4, text: "Desc Danger 4", checked: true  }
         ];
     }
-
-
+    
     get selectedDefaultList() {
         return this.list.filter(x => x.checked).map(x => x.id);
     }
