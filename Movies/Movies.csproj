@@ -580,24 +580,6 @@
       <DependentUpon>_index.css</DependentUpon>
     </Content>
     <Content Include="styles\components\_index.scss" />
-    <Content Include="styles\components\_my-datebox.css">
-      <DependentUpon>_my-datebox.scss</DependentUpon>
-    </Content>
-    <Content Include="styles\components\_my-datebox.min.css">
-      <DependentUpon>_my-datebox.css</DependentUpon>
-    </Content>
-    <Content Include="styles\components\_my-dropdown.css">
-      <DependentUpon>_my-dropdown.scss</DependentUpon>
-    </Content>
-    <Content Include="styles\components\_my-dropdown.min.css">
-      <DependentUpon>_my-dropdown.css</DependentUpon>
-    </Content>
-    <Content Include="styles\components\_my-textbox.css">
-      <DependentUpon>_my-textbox.scss</DependentUpon>
-    </Content>
-    <Content Include="styles\components\_my-textbox.min.css">
-      <DependentUpon>_my-textbox.css</DependentUpon>
-    </Content>
     <Content Include="styles\components\_my-textbox.scss" />
     <Content Include="styles\modules\about\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
@@ -669,6 +651,7 @@
     <Content Include="styles\components\_my-dropdown.scss" />
     <Content Include="styles\components\_my-checkbox.scss" />
     <Content Include="styles\components\_my-radiobutton.scss" />
+    <Content Include="styles\components\_my-radiobuttonlist.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

@@ -1,11 +1,14 @@
 ﻿<template>
-    <label id="${id}-Label">${label}</label>
-    <div repeat.for="radio of list">
-        <div>
+    <label id="radioButtonList${objId}">${name}</label>
+    <div repeat.for="radio of list"
+         class="radio ${radioClass} ${alignment}"
+         id="radioListContainer${objId}-${radio.id}"> 
             <input type="radio" 
-                   name="myRadio" 
+                   name.bind="objId" 
                    model.bind="radio"
-                   checked.bind="selected" /> ${radio.text}
-        </div>
+                   checked.bind="selected"
+                   id="radioListInput${objId}-${radio.id}"/>  
+        <label id="radioListLabel${objId}-${radio.id}" 
+               for="radioListInput${objId}-${radio.id}">${radio.text}</label>
     </div>
-</template> 
+</template>

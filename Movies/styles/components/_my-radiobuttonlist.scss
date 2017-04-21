@@ -1,0 +1,10 @@
+﻿[id^="radioButtonList"] {
+    display: block;
+}
+
+[id^="radioListContainer"] {
+    &.horizontal {
+        display: inline-block;
+        padding: 5px 20px;
+    }
+}

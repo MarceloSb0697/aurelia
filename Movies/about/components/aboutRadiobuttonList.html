@@ -17,7 +17,43 @@
                     <tbody>
                         <tr>
                             <td>objId</td>
-                            <td>El id del objeto que le generara al input</td>
+                            <td>
+                                El id del objeto que le generara al input <br />
+                                La propiedad objId tambien se usara para el name del radio
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>list</td>
+                            <td>
+                                La lista de objetos para iterar<br />
+                                * Estos objetos tienen que tener las propiedades Id y Text
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>
+                                El label referente que mostrara referido a la lista de objetos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>selected</td>
+                            <td>
+                                El objeto seleccionado de la lista<br />
+                                *El valor de este campo es recuperado por selectd.id
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>radioClass (opcional) - default : ''</td>
+                            <td>
+                                El nombre del estilo de la clase que se le quiera asignar al radio button
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>alignment(opcional) - default : ''</td>
+                            <td>
+                                El alineamiento que tendran los radiobutton, por defecto es vertical <br/>
+                                En caso sea horizontal , asignarle el valor
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -49,13 +85,64 @@
                                 <td>
                                     <div>
                                         <div>
-                                            <my-radiobutton-list >
+                                            <my-radiobutton-list obj-id="radioListDefault"
+                                                                 list.bind="radioButtonList"
+                                                                 selected.bind="selectedOption"
+                                                                 name="radio Demo Default">
                                             </my-radiobutton-list>
                                         </div>
                                         <div>
-                                            Valor del Radiobutton : 
+                                            Valor del Radiobutton : ${selectedOption.id}
                                         </div>
-
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            <my-radiobutton-list obj-id="radioListPrimary"
+                                                                 list.bind="radioButtonList"
+                                                                 selected.bind="selectedPrimaryOption"
+                                                                 name="radio Demo Primary"
+                                                                 class="radio-primary">
+                                            </my-radiobutton-list>
+                                        </div>
+                                        <div>
+                                            Valor del Radiobutton : ${selectedPrimaryOption.id}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div>
+                                            <my-radiobutton-list obj-id="radioListHorizontalInfo"
+                                                                 list.bind="radioButtonList"
+                                                                 selected.bind="selectedHorizontalInfoOption"
+                                                                 name="radio Horizontal Info"
+                                                                 class="radio-info"
+                                                                 alignment="horizontal">
+                                            </my-radiobutton-list>
+                                        </div>
+                                        <div>
+                                            Valor del Radiobutton : ${selectedHorizontalInfoOption.id}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            <my-radiobutton-list obj-id="radioListHorizontalWarning"
+                                                                 list.bind="radioButtonList"
+                                                                 selected.bind="selectedHorizontalWarningOption"
+                                                                 name="radio Horizontal Warning"
+                                                                 class="radio-warning"
+                                                                 alignment="horizontal">
+                                            </my-radiobutton-list>
+                                        </div>
+                                        <div>
+                                            Valor del Radiobutton : ${selectedHorizontalWarningOption.id}
+                                        </div>
                                     </div>
                                 </td>
                             </tr>

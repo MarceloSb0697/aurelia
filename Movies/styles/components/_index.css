@@ -220,3 +220,10 @@
 .radio-success input[type="radio"]:checked + label::after {
   background-color: #5cb85c; }
 
+[id^="radioButtonList"] {
+  display: block; }
+
+[id^="radioListContainer"].horizontal {
+  display: inline-block;
+  padding: 5px 20px; }
+
