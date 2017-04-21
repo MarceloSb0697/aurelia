@@ -42,22 +42,40 @@
 .checkbox input[type="checkbox"] {
     opacity: 0;
 }
+ 
 
-.checkbox input[type="checkbox"]:focus + label::before {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+.checkbox input[type="checkbox"] {
+    &:focus + label::before {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    &:checked + label::after {
+        font-family: 'FontAwesome';
+        content: "\f00c";
+    }
+
+    &:indeterminate + label::after {
+        font-family: 'FontAwesome';
+        content: "\f068";
+        margin-left: -19px;
+        margin-top: 1px;
+    }
 }
 
-.checkbox input[type="checkbox"]:checked + label::after {
+.checkbox input[type="checkbox"] {
     font-family: 'FontAwesome';
-    content: "\f00c";
-}
-.checkbox input[type="checkbox"]:indeterminate + label::after {
-    font-family: 'FontAwesome';
-    content: "\f068";
-    margin-left: -19px;
-    margin-top: 1px;
+
+    &:checked + label::after {
+        content: "\f00c";
+    }
+
+    &:indeterminate + label::after { 
+        content: "\f068";
+        margin-left: -19px;
+        margin-top: 1px;
+    }
 }
 
 .checkbox input[type="checkbox"]:disabled + label {
@@ -77,47 +95,77 @@
     margin-top: 0;
 }
 
-.checkbox-primary input[type="checkbox"]:checked + label::before {
-    background-color: #428bca;
-    border-color: #428bca;
+.checkbox-primary {
+    input[type="checkbox"] {
+        &:checked + label::before,
+        &:indeterminate + label::before {
+            background-color: #428bca;
+            border-color: #428bca;
+        }
+
+        &:checked + label::after, 
+        &:indeterminate + label::after {
+            color: #fff;
+        }
+    } 
 }
 
-.checkbox-primary input[type="checkbox"]:checked + label::after {
-    color: #fff;
+.checkbox-danger {
+    input[type="checkbox"] {
+        &:checked + label::before,
+        &:indeterminate + label::before {
+            background-color: #d9534f;
+            border-color: #d9534f;
+        }
+
+        &:checked + label::after,
+        &:indeterminate + label::after {
+            color: #fff;
+        }
+    }
 }
 
-.checkbox-danger input[type="checkbox"]:checked + label::before {
-    background-color: #d9534f;
-    border-color: #d9534f;
+.checkbox-info {
+    input[type="checkbox"] {
+        &:checked + label::before,
+        &:indeterminate + label::before {
+            background-color: #5bc0de;
+            border-color: #5bc0de;
+        }
+
+        &:checked + label::after,
+        &:indeterminate + label::after {
+            color: #fff;
+        }
+    }
 }
 
-.checkbox-danger input[type="checkbox"]:checked + label::after {
-    color: #fff;
+.checkbox-warning {
+    input[type="checkbox"] {
+        &:checked + label::before,
+        &:indeterminate + label::before {
+            background-color: #f0ad4e;
+            border-color: #f0ad4e;
+        }
+
+        &:checked + label::after,
+        &:indeterminate + label::after {
+            color: #fff;
+        }
+    }
 }
 
-.checkbox-info input[type="checkbox"]:checked + label::before {
-    background-color: #5bc0de;
-    border-color: #5bc0de;
-}
+.checkbox-success {
+    input[type="checkbox"] {
+        &:checked + label::before,
+        &:indeterminate + label::before {
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+        }
 
-.checkbox-info input[type="checkbox"]:checked + label::after {
-    color: #fff;
-}
-
-.checkbox-warning input[type="checkbox"]:checked + label::before {
-    background-color: #f0ad4e;
-    border-color: #f0ad4e;
-}
-
-.checkbox-warning input[type="checkbox"]:checked + label::after {
-    color: #fff;
-}
-
-.checkbox-success input[type="checkbox"]:checked + label::before {
-    background-color: #5cb85c;
-    border-color: #5cb85c;
-}
-
-.checkbox-success input[type="checkbox"]:checked + label::after {
-    color: #fff;
+        &:checked + label::after,
+        &:indeterminate + label::after {
+            color: #fff;
+        }
+    }
 }

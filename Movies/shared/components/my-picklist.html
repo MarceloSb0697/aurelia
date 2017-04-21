@@ -5,11 +5,11 @@
           if.bind="selectAll">
         <input type="checkbox"
                checked.bind="allChecked" 
-               id="pickListInputAll"
-               name="pickListInputAll" 
+               id="pickListInputAll${objId}"
+               name="pickListInputAll${objId}" 
                change.delegate="checkAll()"
                indeterminate.bind="allIndeterminate"/>
-        <label for="pickListInputAll">All</label>
+        <label for="pickListInputAll${objId}">All</label>
     </div>
     <div repeat.for="option of list"
          class="checkbox ${class} ${alignment}"
