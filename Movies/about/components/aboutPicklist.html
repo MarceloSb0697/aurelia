@@ -53,6 +53,9 @@
                                                  name="PickList demo"
                                                  list.bind="list" >
                                     </my-picklist>
+                                    <div>
+                                        Selected values of Default list ${selectedDefaultList}
+                                    </div>
                                 </td>
                                 <td>
                                     <my-picklist obj-id="picklistPrimary"
@@ -61,6 +64,9 @@
                                                  class="checkbox-primary"
                                                  select-all="true">
                                     </my-picklist>
+                                    <div>
+                                        Selected values of Default list ${selectedPrimaryList}
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -71,6 +77,9 @@
                                                  class="checkbox-info" 
                                                  alignment="horizontal">
                                     </my-picklist>
+                                    <div>
+                                        Selected values of Default list ${selectedInfoList}
+                                    </div>
                                 </td>
                                 <td>
                                     <my-picklist obj-id="picklistDanger"
@@ -80,6 +89,9 @@
                                                  alignment="horizontal"
                                                  select-all="true">
                                     </my-picklist>
+                                    <div>
+                                        Selected values of Default list ${selectedDangerList}
+                                    </div>
                                 </td>
                             </tr>
                         </table>
