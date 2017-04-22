@@ -1,0 +1,82 @@
+﻿<template>
+    <div class="componentContainer">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="componentTitle">
+                    ${title}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>objId</td>
+                            <td>El id del objeto que le generara al input</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>El nombre que le asignara al label del input</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>El valor que le asignara al input</td>
+                        </tr>
+                        <tr>
+                            <td>placeholder (Opcional) - defaultValue : ''</td>
+                            <td>El placeholder que le asignara al input</td>
+                        </tr>
+                        <tr>
+                            <td>class (Opcional) - defaultValue : ''</td>
+                            <td>Una clase en especifico que se quiera para el checbox</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped table-bordered">
+                            <tr>
+                                <td>
+                                    <my-textarea obj-id="demo"
+                                                name="Demo Label"
+                                                value.bind="defaultValue"
+                                                placeholder="TextArea">
+                                    </my-textarea>
+                                    <div>
+                                        Valor del Area : ${defaultValue}
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

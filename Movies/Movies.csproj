@@ -77,6 +77,8 @@
     <Content Include="about\components\aboutDatebox.js" />
     <Content Include="about\components\aboutDropdown.html" />
     <Content Include="about\components\aboutDropdown.js" />
+    <Content Include="about\components\aboutTextarea.html" />
+    <Content Include="about\components\aboutTextarea.js" />
     <Content Include="about\components\aboutTextbox.html" />
     <Content Include="about\components\aboutTextbox.js" />
     <Content Include="about\components\aboutRadiobutton.html" />
@@ -576,6 +578,8 @@
     <Content Include="shared\components\my-radiobutton.js" />
     <Content Include="shared\components\my-radiobutton-list.html" />
     <Content Include="shared\components\my-radiobutton-list.js" />
+    <Content Include="shared\components\my-textarea.html" />
+    <Content Include="shared\components\my-textarea.js" />
     <Content Include="shared\custom-functions.js" />
     <Content Include="styles\components\_index.css">
       <DependentUpon>_index.scss</DependentUpon>
@@ -657,6 +661,7 @@
     <Content Include="styles\components\_my-radiobutton.scss" />
     <Content Include="styles\components\_my-radiobuttonlist.scss" />
     <Content Include="styles\components\_my-picklist.scss" />
+    <Content Include="styles\components\_my-textarea.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

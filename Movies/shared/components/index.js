@@ -7,5 +7,6 @@
         "../my-radiobutton",
         "../my-radiobutton-list",
         "../my-picklist",
+        "../my-textarea",
     );
 }
