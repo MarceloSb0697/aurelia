@@ -1,0 +1,1 @@
+module.exports = require("npm:jquery-mask-plugin@1.14.10/dist/jquery.mask.js");

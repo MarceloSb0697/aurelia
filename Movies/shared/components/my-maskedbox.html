@@ -1,0 +1,14 @@
+﻿<template>
+    <div id="maskedBoxContainer${objId}" 
+         class="form-group"> 
+        <label>${name}</label>
+        <input id="maskedBoxInput${objId}"
+               class="form-control"
+               type="text" 
+               keyup.trigger="keyup()"
+               style="width:auto" />
+        <small id="maskedBoxError${objId}"
+               if.bind="!isValid"
+               class="error">${errorMessage}</small>
+    </div>
+</template>

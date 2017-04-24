@@ -29,6 +29,8 @@ System.config({
     "bootstrap-datepicker": "npm:bootstrap-datepicker@1.6.4",
     "core-js": "npm:core-js@1.2.7",
     "font-awesome": "npm:font-awesome@4.7.0",
+    "jquery": "npm:jquery@3.2.1",
+    "jquery-mask-plugin": "npm:jquery-mask-plugin@1.14.10",
     "moment": "npm:moment@2.18.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"

@@ -7,7 +7,6 @@
         this.infoValue = false;
         this.warningValue = true;
         this.errorValue = false;
-
     }
 
     activate() {

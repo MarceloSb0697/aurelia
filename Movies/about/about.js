@@ -16,17 +16,19 @@ export class About {
             { route: "radiobutton", moduleId: "about/components/aboutRadiobutton", nav: true, name: "radiobutton", title: "Radiobutton" },
             { route: "radiobuttonlist", moduleId: "about/components/aboutRadiobuttonList", nav: true, name: "radiobuttonlist", title: "RadiobuttonList" },
             { route: "picklist", moduleId: "about/components/aboutPicklist", nav: true, name: "picklist", title: "Picklist" },
-            { route: "textArea", moduleId: "about/components/aboutTextArea", nav: true, name: "textArea", title: "TextArea" }
+            { route: "textArea", moduleId: "about/components/aboutTextArea", nav: true, name: "textArea", title: "TextArea" },
+            { route: "maskedbox", moduleId: "about/components/aboutMaskedbox", nav: true, name: "maskedbox", title: "Maskedbox" }
+            //un masked box 
             //un select con filtro
             //un cargador de imagenes
             //un tab
             //un menu
             //una grilla
-            //un masked box 
             //un menu
             //un tree
             //un label
             //unos taggs
+			//un timer
         ];
         config.map(routes);
     }

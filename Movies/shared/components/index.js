@@ -8,5 +8,6 @@
         "../my-radiobutton-list",
         "../my-picklist",
         "../my-textarea",
+        "../my-maskedbox",
     );
 }

@@ -219,5 +219,6 @@
     "buffer": "npm:buffer@^5.0.6"
   },
   "npm:base64-js@1.2.0": {},
-  "npm:moment@2.18.1": {}
+  "npm:moment@2.18.1": {},
+  "npm:jquery-mask-plugin@1.14.10": {}
 }
