@@ -17,8 +17,8 @@ export class About {
             { route: "radiobuttonlist", moduleId: "about/components/aboutRadiobuttonList", nav: true, name: "radiobuttonlist", title: "RadiobuttonList" },
             { route: "picklist", moduleId: "about/components/aboutPicklist", nav: true, name: "picklist", title: "Picklist" },
             { route: "textArea", moduleId: "about/components/aboutTextArea", nav: true, name: "textArea", title: "TextArea" },
-            { route: "maskedbox", moduleId: "about/components/aboutMaskedbox", nav: true, name: "maskedbox", title: "Maskedbox" }
-            //un masked box 
+            { route: "maskedbox", moduleId: "about/components/aboutMaskedbox", nav: true, name: "maskedbox", title: "Maskedbox" },
+            { route: "label", moduleId: "about/components/aboutLabel", nav: true, name: "label", title: "Label" }
             //un select con filtro
             //un cargador de imagenes
             //un tab

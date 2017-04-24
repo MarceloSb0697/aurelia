@@ -243,3 +243,8 @@
 [id^="maskedBoxContainer"] {
   display: inline-block; }
 
+[id^="labelComponent"] {
+  font-weight: bold; }
+  [id^="labelComponent"] [id^="labelComponentValue"] {
+    font-weight: initial; }
+

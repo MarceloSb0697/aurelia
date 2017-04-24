@@ -9,5 +9,6 @@
         "../my-picklist",
         "../my-textarea",
         "../my-maskedbox",
+        "../my-label",
     );
 }

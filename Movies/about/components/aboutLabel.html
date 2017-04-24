@@ -1,0 +1,70 @@
+﻿<template>
+    <div class="componentContainer">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="componentTitle">
+                    ${title}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Propiedades</td>
+                            <td>Descripción</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>objId</td>
+                            <td>El id del objeto que le generara al label</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>El nombre que le asignara al label del componente</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>El valor que le asignara al label</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <h4>HTML</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeHtml">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div>
+                    <h4>JS</h4>
+                    <pre rel="HTML">
+                    <code style="float:left" innerhtml.bind="codeJs">
+                       
+                        </code>                        
+                    </pre>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="componentTitle">
+                            Example
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped table-bordered">
+                            <tr>
+                                <td> 
+                                    <my-label obj-id="demoLabel"
+                                              name="DEMO"
+                                              value.bind="labelValue">
+                                    </my-label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
