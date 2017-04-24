@@ -1,0 +1,28 @@
+﻿<template>
+    <div class="panel with-nav-tabs ${class ? class  : 'panel-default'}"
+         id="tabListContainer${objId}">
+        <div class="panel-heading"
+             id="tabListHeader${objId}">
+            <ul class="nav nav-tabs"
+                id="tabContainer${objId}">
+                <li repeat.for="tab of tabs"
+                    class="${ tab.active ? 'active':''}"
+                    id="tabItem${tab.objId}">
+                    <a href="#tabContent${tab.objId}" data-toggle="tab">${tab.name}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-body"
+              id="tabListBody${objId}">
+            <div class="tab-content"
+                 id="contentContainer${objId}">
+                <div repeat.for="tab of tabs"
+                     class="tab-pane fade ${ tab.active ? 'in active':''}"
+                     id="tabContent${tab.objId}">
+                    <compose view-model="${tab.viewModel}">
+                    </compose>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -18,10 +18,10 @@ export class About {
             { route: "picklist", moduleId: "about/components/aboutPicklist", nav: true, name: "picklist", title: "Picklist" },
             { route: "textArea", moduleId: "about/components/aboutTextArea", nav: true, name: "textArea", title: "TextArea" },
             { route: "maskedbox", moduleId: "about/components/aboutMaskedbox", nav: true, name: "maskedbox", title: "Maskedbox" },
-            { route: "label", moduleId: "about/components/aboutLabel", nav: true, name: "label", title: "Label" }
+            { route: "label", moduleId: "about/components/aboutLabel", nav: true, name: "label", title: "Label" },
+            { route: "tab", moduleId: "about/components/aboutTab", nav: true, name: "tab", title: "Tab" }
             //un select con filtro
-            //un cargador de imagenes
-            //un tab
+            //un cargador de imagenes 
             //un menu
             //una grilla
             //un menu

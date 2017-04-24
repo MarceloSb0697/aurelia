@@ -81,6 +81,14 @@
     <Content Include="about\components\aboutDatebox.js" />
     <Content Include="about\components\aboutDropdown.html" />
     <Content Include="about\components\aboutDropdown.js" />
+    <Content Include="about\components\aboutTab.html" />
+    <Content Include="about\components\aboutTab.js" />
+    <Content Include="about\components\aboutTabs\aboutTabThree.html" />
+    <Content Include="about\components\aboutTabs\aboutTabThree.js" />
+    <Content Include="about\components\aboutTabs\aboutTabTwo.html" />
+    <Content Include="about\components\aboutTabs\aboutTabTwo.js" />
+    <Content Include="about\components\aboutTabs\aboutTabOne.html" />
+    <Content Include="about\components\aboutTabs\aboutTabOne.js" />
     <Content Include="about\components\aboutTextarea.html" />
     <Content Include="about\components\aboutTextarea.js" />
     <Content Include="about\components\aboutTextbox.html" />
@@ -586,6 +594,8 @@
     <Content Include="shared\components\my-radiobutton.js" />
     <Content Include="shared\components\my-radiobutton-list.html" />
     <Content Include="shared\components\my-radiobutton-list.js" />
+    <Content Include="shared\components\my-tab-list.html" />
+    <Content Include="shared\components\my-tab-list.js" />
     <Content Include="shared\components\my-textarea.html" />
     <Content Include="shared\components\my-textarea.js" />
     <Content Include="shared\custom-functions.js" />
@@ -672,6 +682,7 @@
     <Content Include="styles\components\_my-textarea.scss" />
     <Content Include="styles\components\_my-maskedbox.scss" />
     <Content Include="styles\components\_my-label.scss" />
+    <Content Include="styles\components\_my-tab-list.scss" />
     <None Include="styles\modules\movies\_movie-edit.scss" />
     <Content Include="styles\_index.css">
       <DependentUpon>_index.scss</DependentUpon>

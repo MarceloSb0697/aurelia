@@ -10,5 +10,6 @@
         "../my-textarea",
         "../my-maskedbox",
         "../my-label",
+        "../my-tab-list",
     );
 }
